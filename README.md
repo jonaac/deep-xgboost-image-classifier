@@ -1,3 +1,5 @@
-# deep-xgboost-image-classifier
+# Deep XGBoost Image Classifier
 
-Convolutional neural networks (CNN) have become one the most popular neural network architectures when it comes to image classification. CNN models have been acknowledged as outstanding feature extractors, but the traditional classification layers can fail to understand the extracted features. This paper examines the possibility of combining CNN with eXtreme Gradient Boosting (XGBoost), a highly accurate and efficient classifying algorithm. The suggested model would integrate CNN as a feature extractor with XGBoost as a recognizer to classify images based on the feature output from the CNN. We test the model on the CIFAR-10 databases with three different CNN structures, and the results show that with simple CNN architectures the CNN-XGBoost model outperforms traditional CNN model, but when we start working with more complex CNN structures (VGG16 and ResNet50) the hybrid model is not outperforming the traditional CNN.
+For this project I develop a CNN-XGBoost model for image classification. The idea is to leverage CNN's feature extraction capabilities and XGBoost's accuracy when it comes to classification. I will be working with the CIFAR-10 data set and I will be testing the hybrid model on three different CNN architectures. A baseline CNN architecture, the VGG16 architecture, and the ResNet architecture.
+
+![alt text](https://github.com/jonaac/deep-xgboost-image-classifier/imgs/main/cnn_xgboost.jpg?raw=true)
