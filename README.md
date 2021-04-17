@@ -4,7 +4,7 @@ For this project I develop a CNN-XGBoost model for image classification. The ide
 
 ![cnn_xgboost](https://raw.githubusercontent.com/jonaac/deep-xgboost-image-classifier/main/imgs/cnn_xgboost.jpg)
 
-'''
+```
 code	|- baseline
 		|	|
 		|	|-- cnn.py
@@ -22,4 +22,4 @@ code	|- baseline
 			|-- cnn_vgg.py
 			|-- cnn_vgg_xgboots.py
 			|-- accuracy_vgg16.py
-'''
+```
