@@ -49,7 +49,7 @@ model.compile(
 	metrics=['accuracy'])
 
 scores = model.evaluate(X_test, y_test,
-						batch_size=128, verbose=0)
+			batch_size=128, verbose=0)
 print('Accuracy of the Baseline CNN model:')
 print("%.2f%%" % (scores[1]*100))
 
