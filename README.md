@@ -5,21 +5,21 @@ For this project I develop a CNN-XGBoost model for image classification. The ide
 ![cnn_xgboost](https://raw.githubusercontent.com/jonaac/deep-xgboost-image-classifier/main/imgs/cnn_xgboost.jpg)
 
 ```
-code	|- baseline
-	|	|
-	|	|-- cnn.py
-	|	|-- cnn_xgboost.py
-	|	|-- accuracy_baseline.py
+code -- |- baseline
+	|    |
+	|    |-- cnn.py
+	|    |-- cnn_xgboost.py
+	|    |-- accuracy_baseline.py
 	|
 	|- resnet
-	|	|
-	|	|-- cnn_resnet.py
-	|	|-- cnn_resnet_xgboost.py
-	|	|-- accuracy_resnet.py
+	|    |
+	|    |-- cnn_resnet.py
+	|    |-- cnn_resnet_xgboost.py
+	|    |-- accuracy_resnet.py
 	|
 	|- vgg16
-		|
-		|-- cnn_vgg.py
-		|-- cnn_vgg_xgboots.py
-		|-- accuracy_vgg16.py
+	     |
+	     |-- cnn_vgg.py
+	     |-- cnn_vgg_xgboots.py
+	     |-- accuracy_vgg16.py
 ```
