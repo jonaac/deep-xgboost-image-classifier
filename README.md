@@ -66,20 +66,20 @@ python3 accuracy_resnet.py
 
 ## Results
 ### Baseline
-| Model | Accuracy |
-| --- | --- |
-| CNN | 87.75%% |
-| CNN-SVM | 85.63% |
-| CNN-kNN | 83.54% |
-| CNN-XGBoost | **89.1%** |
+| Model | Accuracy |		| Model | Accuracy |
+| --- | --- |			| --- | --- |
+| CNN | 87.75%% |		| CNN | **93.58%** |
+| CNN-SVM | 85.63% |		| CNN-SVM | 90.24% |
+| CNN-kNN | 83.54% |		| CNN-kNN | 89.16% |
+| CNN-XGBoost | **89.1%** |	| CNN-XGBoost | 93.35% |
 
 ### VGG16
-| Model | Accuracy |
-| --- | --- |
-| CNN | **93.58%** |
-| CNN-SVM | 90.24% |
-| CNN-kNN | 89.16% |
-| CNN-XGBoost | 93.35% |
+
+
+
+
+
+
 
 ### ResNet50
 | Model | Accuracy |
