@@ -70,7 +70,7 @@ feature_layer_model = keras.Model(
 X_test_cnn = feature_layer_model.predict(X_test)
 X_test_cnn = data.DMatrix(X_test_cnn)
 
-model_svm = pickle.load(open("cnn_xgboost_vgg_SVM.pickle.dat", "rb"))
+model_svm = pickle.load(open("../../models/cnn_xgboost_vgg_SVM.pickle.dat", "rb"))
 
 y_pred = model_svm.predict(X_test_cnn)
 y_pred = np.argmax(y_pred,axis=1)
@@ -80,7 +80,7 @@ accuracy = accuracy_score(y_true, y_pred)
 print('Accuracy of the VGG16-SVM model:')
 print("%.2f%%" % (accuracy * 100.0))
 
-model_knn = pickle.load(open("cnn_xgboost_vgg_kNN.pickle.dat", "rb"))
+model_knn = pickle.load(open("../../models/cnn_xgboost_vgg_kNN.pickle.dat", "rb"))
 
 y_pred = model_knn.predict(X_test_cnn)
 y_pred = np.argmax(y_pred,axis=1)
