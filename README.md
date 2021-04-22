@@ -4,6 +4,7 @@ CNN+XGBoost architectures are very accurate in solving non-image classification 
 
 ![image](https://raw.githubusercontent.com/jonaac/deep-xgboost-image-classifier/main/imgs/cnn_xgboost_small.jpg)
 
+## Files
 ```
 code -- |- baseline
 	|    |
@@ -23,3 +24,18 @@ code -- |- baseline
 	     |-- cnn_vgg_xgboots.py
 	     |-- accuracy_vgg16.py
 ```
+## Getting Started
+
+### Prerequisites
+
+### Files Generated
+
+## Running Experiments
+
+### Baseline
+
+### VGG16
+
+### ResNet50
+
+## Results
