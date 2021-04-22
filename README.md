@@ -4,26 +4,6 @@ CNN+XGBoost architectures are very accurate in solving non-image classification 
 
 ![image](https://raw.githubusercontent.com/jonaac/deep-xgboost-image-classifier/main/imgs/cnn_xgboost_small.jpg)
 
-## Files
-```
-code -- |- baseline
-	|    |
-	|    |-- cnn.py
-	|    |-- cnn_xgboost.py
-	|    |-- accuracy_baseline.py
-	|
-	|- resnet
-	|    |
-	|    |-- cnn_resnet.py
-	|    |-- cnn_resnet_xgboost.py
-	|    |-- accuracy_resnet.py
-	|
-	|- vgg16
-	     |
-	     |-- cnn_vgg.py
-	     |-- cnn_vgg_xgboots.py
-	     |-- accuracy_vgg16.py
-```
 ## Getting Started
 
 A list of all the prerequisites you'll need to run the experiments and the files the code will generate with the parameters to load the CNN and CNN+XGBoost models for each iteration.
@@ -54,21 +34,25 @@ cnn_xgboost_final.pickle.dat	/* CNN+XGBoost model* /
 
 ## Running Experiments
 
-For each iteration, I train the original CNN model, I used the train model to generate the CNN+XGBoost model and I compare the accoracy of each model.
+For each iteration, I train the original CNN model, I used the train model to generate the CNN+XGBoost model and I compare the accoracy of each model. Download this repository and run the following code for each CNN+XGboost model:
+
 ### Baseline
 ```
+cd code/baseline/
 python3 cnn.py
 python3 cnn_xgboost.py
 python3 accuracy_baseline.py
 ```
 ### VGG16
 ```
+cd code/vgg16/
 python3 cnn_vgg16.py
 python3 cnn_vgg16_xgboost.py
 python3 acuoracy_vgg16.py
 ```
 ### ResNet50
 ```
+cd code/resnet/
 python3 cnn_resnet.py
 python3 cnn_resnet_xgboost.py
 python3 accuracy_resnet.py
@@ -98,3 +82,24 @@ python3 accuracy_resnet.py
 | CNN-SVM | 90.92% |
 | CNN-kNN | 87.98% |
 | CNN-XGBoost | 94.18% |
+
+## Files
+```
+code ---|- baseline
+	|    |
+	|    |-- cnn.py
+	|    |-- cnn_xgboost.py
+	|    |-- accuracy_baseline.py
+	|
+	|- resnet
+	|    |
+	|    |-- cnn_resnet.py
+	|    |-- cnn_resnet_xgboost.py
+	|    |-- accuracy_resnet.py
+	|
+	|- vgg16
+	     |
+	     |-- cnn_vgg.py
+	     |-- cnn_vgg_xgboots.py
+	     |-- accuracy_vgg16.py
+```
