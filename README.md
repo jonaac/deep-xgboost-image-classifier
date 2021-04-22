@@ -23,13 +23,19 @@ pickle
 
 ### Files Generated
 
-For each CNN+XBoost the code will create files to load and train the different models used in this project.
+For each CNN+XBoost the code will create files to load and evaluate the different trained models used in this project.
 
 ```
 For each iteration:
 model.json			/* CNN model */
 model.h5			/* CNN model trained weight */
 cnn_xgboost_final.pickle.dat	/* CNN+XGBoost model* /
+```
+To evaluate the accuracy of the CNN+XGBoost model I also developed other hybrid models based on other classification algorithms, CNN+SVM and CNN+kNN. For clarity and simplicity I uploaded to this repository the fully trained models as:
+```
+For each iteration:
+cnn_SVM.pickle.dat		/* CNN+SVM model */
+cnn_kNN.pickle.dat		/* CNN+kNN model */
 ```
 
 ## Running Experiments
@@ -85,21 +91,15 @@ python3 accuracy_resnet.py
 
 ## Files
 ```
-code ---|- baseline
-	|    |
-	|    |-- cnn.py
-	|    |-- cnn_xgboost.py
-	|    |-- accuracy_baseline.py
+code ---|- baseline --|-- cnn.py
+	|    	      |-- cnn_xgboost.py
+	|    	      |-- accuracy_baseline.py
 	|
-	|- resnet
-	|    |
-	|    |-- cnn_resnet.py
-	|    |-- cnn_resnet_xgboost.py
-	|    |-- accuracy_resnet.py
+	|- resnet ----|-- cnn_resnet.py
+	|    	      |-- cnn_resnet_xgboost.py
+	|    	      |-- accuracy_resnet.py
 	|
-	|- vgg16
-	     |
-	     |-- cnn_vgg.py
-	     |-- cnn_vgg_xgboots.py
-	     |-- accuracy_vgg16.py
+	|- vgg16 -----|-- cnn_vgg.py
+	     	      |-- cnn_vgg_xgboots.py
+	     	      |-- accuracy_vgg16.py
 ```
