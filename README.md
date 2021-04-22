@@ -26,16 +26,52 @@ code -- |- baseline
 ```
 ## Getting Started
 
+A list of all the prerequisites you'll need to run the experiments and the files the code will generate with the parameters to load the CNN and CNN+XGBoost models for each iteration.
+
 ### Prerequisites
+
+```
+Python
+Keras
+tensorflow
+xgboost
+sklearn
+numpy
+scipy
+pickle
+```
 
 ### Files Generated
 
+For each CNN+XBoost the code will create files to load and train the different models used in this project.
+
+```
+For each iteration:
+model.json			/* CNN model */
+model.h5			/* CNN model trained weight */
+cnn_xgboost_final.pickle.dat	/* CNN+XGBoost model* /
+```
+
 ## Running Experiments
 
+For each iteration, I train the original CNN model, I used the train model to generate the CNN+XGBoost model and I compare the accoracy of each model.
 ### Baseline
-
+```
+python3 cnn.py
+python3 cnn_xgboost.py
+python3 accuracy_baseline.py
+```
 ### VGG16
-
+```
+python3 cnn_vgg16.py
+python3 cnn_vgg16_xgboost.py
+python3 acuoracy_vgg16.py
+```
 ### ResNet50
+```
+python3 cnn_resnet.py
+python3 cnn_resnet_xgboost.py
+python3 accuracy_resnet.py
+```
 
 ## Results
