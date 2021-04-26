@@ -48,7 +48,7 @@ model.compile(
 	loss='binary_crossentropy',
 	metrics=['acc'])
 
-print('Build and save VGG16 model')
+print('Build and save ResNet-50 model')
 
 history = model.fit(x_train, y_train, 
 	epochs=5,
