@@ -1,5 +1,7 @@
 # Deep XGBoost Image Classifier
 
+## I HAVEN'T MAINTAINED THIS REPO IN SEVERAL YEARS, DO NOT EXPCET FOR IT TO WORK WITH CURRENT LIBRARIES 
+
 This project was developed Fall 2019
 
 CNN+XGBoost architectures are very accurate in solving non-image classification problems. In this project, I adapt this model to show a shockingly powerful method for image classification. The idea is to leverage CNN's feature extraction capabilities and XGBoost's classification accuracy. I use the CIFAR-10 data set and I test the hybrid model on three different CNN architectures. A baseline CNN architecture, the VGG16 architecture, and the ResNet architecture.
